@@ -2,7 +2,7 @@
 [
     {
         "location": "front_end",
-        "installToPath": "public/app"
+        "installToPath": "public"
     }
 ]}
 
