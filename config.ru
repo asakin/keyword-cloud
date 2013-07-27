@@ -1,3 +1,3 @@
-require './hello'
+require './keyword-cloud.rb'
 run Sinatra::Application
 
