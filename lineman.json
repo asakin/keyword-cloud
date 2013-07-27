@@ -1,7 +1,9 @@
-"linemanApps": [
-  {
-    "location": "front_end",
-    "installToPath": "public/app"
-  }
-]
-
+{
+    "linemanApps":
+    [
+        {
+            "location": "front_end",
+            "installToPath": "public/app"
+        }
+    ]
+}
