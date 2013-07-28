@@ -9,11 +9,13 @@ get '/api/V1/index.html' do
   'Hello API'
 end
 
-# Catch all routes being passed to the angular app
-get '/*' do
-  erb :index
+
+def get_or_post(path, opts={}, &block)
+  get(path, opts, &block)
+  post(path, opts, &block)
 end
 
-post '/*' do
-  erb :index
+# Catch all routes being passed to the angular app
+get_or_post '/*' do
+  send_file File.join(settings.public_folder, 'index.html')
 end
