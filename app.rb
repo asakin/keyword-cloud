@@ -17,6 +17,6 @@ end
 
 # Catch all routes being passed to the angular app
 get_or_post '/*' do
-  #send_file File.join(settings.public_folder, 'index.html')
-  settings.public_folder
+  files = Dir.glob(File.join(settings.public_folder, "*"))
+  files.to_s
 end
