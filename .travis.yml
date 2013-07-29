@@ -5,4 +5,4 @@ rvm:
 before_install:
   - "npm install -g lineman"
   - "cd front_end && npm install"
-before_script: "cd front_end && lineman build"
+before_script: "lineman build"
