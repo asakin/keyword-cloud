@@ -2,6 +2,8 @@
 [
     {
         "location": "front_end",
-        "installToPath": "public"
+        "installToPath": "public",
+        "filesToMove": ["js/*.js", "css/*.css", "img/*.*", "*.html"],
+        "createDirectories": true
     }
 ]}
