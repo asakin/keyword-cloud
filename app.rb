@@ -9,7 +9,6 @@ get '/api/V1/index.html' do
   'Hello API'
 end
 
-
 def get_or_post(path, opts={}, &block)
   get(path, opts, &block)
   post(path, opts, &block)
