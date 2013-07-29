@@ -1,7 +1,7 @@
 language: ruby
 rvm:
-  - 1.9.2
   - 1.9.3
+  - 1.9.2
 before_install:
-  - "npm install"
+  - "npm install -g lineman"
 before_script: "cd front_end && lineman build"
