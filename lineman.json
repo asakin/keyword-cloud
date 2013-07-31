@@ -2,8 +2,6 @@
 [
     {
         "location": "front_end",
-        "installToPath": "public",
-        "filesToDeploy": ["js/*.js", "css/*.css", "img/*.*", "*.html"],
-        "overwriteExistingFiles": true
+        "installToPath": "public"
     }
 ]}
