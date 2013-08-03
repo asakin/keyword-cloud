@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'json'
 
-configure :development do
+configure :test,:development do
   set :public_folder, Proc.new { File.join(root, 'front_end/dist') }
 end
 
