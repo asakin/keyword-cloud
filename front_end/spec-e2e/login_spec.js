@@ -2,7 +2,6 @@ var protractor = require('protractor');
 require('protractor/jasminewd');
 
 describe('my angular app', function () {
-  this.timeout(10000);
   var ptor;
 
   describe('visiting the login page', function () {
