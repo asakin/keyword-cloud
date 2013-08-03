@@ -6,7 +6,9 @@ rvm:
   - rbx-19mode
 before_install:
   - npm install -g lineman
-  - cd front_end && npm install
+  - cd front_end 
+  - npm install
+  - npm install protractor
   - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
   - sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
   - sudo apt-get update
