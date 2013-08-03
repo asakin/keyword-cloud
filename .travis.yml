@@ -14,7 +14,7 @@ before_install:
 script:
   - "bundle exec rake"
   - "cd front_end"
-  - "lineman run"
+  - "lineman run&"
   - "lineman spec-ci"
   - './node_modules/protractor/bin/protractor config/spec-e2e.jsRunning "configure" task'
   - "cd .."
