@@ -21,6 +21,6 @@ exports.config = {
     isVerbose: false,
     showColors: true,
     includeStackTrace: true
-    defaultTimeoutInterval: 15000
+    defaultTimeoutInterval: 20000
   }
 };
