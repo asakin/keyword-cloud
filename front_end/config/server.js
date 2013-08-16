@@ -14,19 +14,19 @@
 
 module.exports = {
   drawRoutes: function(app) {
-    app.post('/login', function(req, res) {
-      res.json({ message: 'logging in!' });
+    app.post('/api/V1/login', function(req, res) {
+      res.json({ message: 'logging in client!' });
     });
 
-    app.post('/logout', function(req, res) {
-      res.json({ message: 'logging out!'});
+    app.post('/api/V1/logout', function(req, res) {
+      res.json({ message: 'logging out client!'});
     });
 
-    app.get('/books', function (req, res) {
+    app.get('/api/V1/books', function (req, res) {
       res.json([
-        {title: 'Great Expectations', author: 'Dickens'},
-        {title: 'Foundation Series', author: 'Asimov'},
-        {title: 'Treasure Island', author: 'Stephenson'}
+        {title: 'Great Expectations Client', author: 'Dickens'},
+        {title: 'Foundation Series Client', author: 'Asimov'},
+        {title: 'Treasure Island Client', author: 'Stephenson'}
       ]);
     });
   }

@@ -6,12 +6,10 @@ configure :test,:development do
   set :public_folder, Proc.new { File.join(root, 'front_end/dist') }
 end
 
-get '/api/V1/index', :provides => :json do
-  content_type :json
-  json_status 404, "Not fosund"
+post '/api/V1/login', :provides => :json do
+  status(200)
+  { :message => 'logging in server!' }.to_json
 end
-
-
 
 # A utility method for setting get_or_post routes
 def get_or_post(path, opts={}, &block)

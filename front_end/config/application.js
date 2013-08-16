@@ -9,17 +9,23 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend('application
 
   // html5push state simulation
   server: {
-    pushState: true
+    pushState: true,
+    apiProxy: {
+      enabled: false,
+      port: 4567,
+      prefix: 'api'
+    }
   },
 
   // configure lineman to load additional angular related npm tasks
   loadNpmTasks: [
-    "grunt-angular-templates",
-    "grunt-concat-sourcemap",
-    "grunt-ngmin"
+    'grunt-angular-templates',
+    'grunt-contrib-sass',
+    'grunt-concat-sourcemap',
+    'grunt-ngmin'
   ],
 
-  // we don't have handlebars templates or coffeescript by default
+  // we don't have handlebars templates by default
   removeTasks: {
     common: ["concat", "handlebars", "jst"]
   },
