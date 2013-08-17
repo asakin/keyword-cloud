@@ -14,5 +14,5 @@ This file can be very useful for rapid prototyping or even organically
 
 module.exports =
   drawRoutes: (app) ->
-    app.get '/api/V1/search', (req, res) ->
-      res.json ( {keywords: ['ariel','sakin','was','here']} )
+#    app.get '/api/V1/search', (req, res) ->
+#      res.json ( {keywords: ['ariel','sakin','was','here']} )

@@ -6,9 +6,9 @@ configure :test,:development do
   set :public_folder, Proc.new { File.join(root, 'front_end/dist') }
 end
 
-post '/api/V1/login', :provides => :json do
+get '/api/V1/search', :provides => :json do
   status(200)
-  { :message => 'logging in server!' }.to_json
+  { :keywords=> ['some','other','list'] }.to_json
 end
 
 # A utility method for setting get_or_post routes
