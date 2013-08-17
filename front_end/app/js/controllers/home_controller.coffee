@@ -1,4 +1,4 @@
-angular.module('app').controller('HomeController', (($scope, $location) ->
+angular.module('app').controller 'HomeController', ($scope, SearchResource) ->
   $scope.search = ->
-    console.log($scope.this_is_cool)
-))
+    $scope.search_results = SearchResource.get()
+

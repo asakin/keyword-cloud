@@ -1,4 +1,4 @@
-<div id="home">
+<div id="home" ng-controller="HomeController">
   <div class="row">
     <div class="large-6 large-offset-3 columns">
       <h2>Enter Search keyword</h2>
@@ -7,10 +7,7 @@
   <form ng-submit="search()">
     <div class="row">
       <div class="large-6 large-offset-3 columns">
-        <input type="text" name="keyword" placeholder="keyword" ng-model="this_is_cool" required/>
-      </div>
-      <div class="large-12 large-offset-3 columns">
-        <span>{{this_is_cool}}</span>
+        <input type="text" name="keyword" placeholder="keyword" ng-model="searchKeyword" required/>
       </div>
     </div>
     <div class="row">
@@ -19,5 +16,13 @@
       </div>
     </div>
   </form>
+  <div class="row">
+    <div class="large-6 large-offset-3 columns">
+      <ul class="search-results">
+        <li class="panel" ng-repeat="result in search_results.keywords">
+          {{ result }}
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
-
