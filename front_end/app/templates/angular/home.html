@@ -7,7 +7,10 @@
   <form ng-submit="search()">
     <div class="row">
       <div class="large-6 large-offset-3 columns">
-        <input type="text" name="keyword" placeholder="keyword" required/>
+        <input type="text" name="keyword" placeholder="keyword" ng-model="this_is_cool" required/>
+      </div>
+      <div class="large-12 large-offset-3 columns">
+        <span>{{this_is_cool}}</span>
       </div>
     </div>
     <div class="row">
