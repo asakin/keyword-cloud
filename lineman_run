@@ -1,0 +1,5 @@
+#! /bin/sh
+
+cd front_end
+lineman run
+
