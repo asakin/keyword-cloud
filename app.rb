@@ -8,7 +8,7 @@ end
 
 get '/api/V1/search', :provides => :json do
   status(200)
-  { :keywords=> ['some','other','list'] }.to_json
+  { :keywords=> ['some','other','list', params['keyword']] }.to_json
 end
 
 # A utility method for setting get_or_post routes
